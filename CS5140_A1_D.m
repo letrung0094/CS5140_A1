@@ -24,9 +24,6 @@ for m1=1:3
             end
         end
         t = toc;
-        n;
-        total_runs(m1);
-        t;
         i = i + 1
         results(i,2) = n;
         results(i,1) = t;
