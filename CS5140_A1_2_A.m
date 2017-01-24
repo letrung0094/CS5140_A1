@@ -11,11 +11,11 @@ found_array = zeros(n,1);
 
 
 while(res == 0) 
-   a = randi(n,20,1); 
+   a = randi(n,1,1);
    [res,found_array] = check(a,found_array);
    k = k + 1;
 end
-
+k
 end
 
 function [res,f_a] = check(array,found_array)

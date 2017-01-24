@@ -5,7 +5,7 @@ function results1 = CS5140_A1_2_B()
 n = 200;
 total_runs = 300;
 results = zeros(total_runs,1);
-
+s = 0;
 
 for m=1:total_runs
     k = 0;
@@ -15,10 +15,12 @@ for m=1:total_runs
         a = randi(n,20,1); 
         [res,found_array] = check(a,found_array);
         k = k + 1;
+        s = s + k;
     end
     results(m,1) = k;
 end
 
+s
 
 end
 
